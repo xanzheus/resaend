@@ -14,13 +14,10 @@ body {
     --color: #5243AC;
 }
 
-
-
-
 .jumbotron span {
-    margin-top: 60px;
-    margin-left: 30px;
-    float: left;
+    margin-top: -15px;
+    margin-left: 20px;
+    float: right;
     padding: 0;
     box-sizing: border-box;
     line-height: 60px;
@@ -101,6 +98,22 @@ body {
     background: #457682;
     /* z-index: 99; */
 }
+
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    z-index: ;
+}
+
+
+
+
+
+
+
 
 
 
@@ -239,11 +252,12 @@ body {
     color: #fff;
     text-align: center;
     margin-top: 50px;
-    padding-top: 50px !important;
+    /* padding-top: 50px !important; */
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
     margin-bottom: 0px;
+    anima
 }
 
 .jumbotron .welcome {
@@ -306,7 +320,9 @@ body {
 
 .info-panel img {
     margin-left: 75px;
-    animation: bounceTop_01 3s infinite;
+    /* animation: bounceTop_01 3s infinite; */
+    background-color: var(--color);
+    border-radius: 50%;
 }
 
 .info-panel h1 {
@@ -766,6 +782,91 @@ body {
         border-radius: 0px;
     }
 
+    .jumbotron span {
+        margin-top: 60px;
+        margin-left: 30px;
+        float: left;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 60px;
+        font-size: 50px;
+        color: rgba(255, 255, 255, 0.75);
+        /* background-color: red; */
+        width: 40px !important;
+        position: fixed;
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    .color i {
+        margin-left: 15px;
+    }
+
+    .jumbotron span:hover {
+        color: #fff;
+        transition: all 0.4s ease-in-out;
+
+    }
+
+    .jumbotron span:hover ul {
+        display: table;
+        margin: 0;
+        padding: 0;
+        margin-left: -21px;
+        z-index: 99;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .jumbotron span i {
+        margin-top: 10px !important;
+        animation: rotate 3s linear infinite;
+    }
+
+
+    .jumbotron span ul {
+        /* background-color: red; */
+        width: 100px;
+        position: fixed;
+        /* right: 200%; */
+        /* top: 60px; */
+        border-radius: 10px;
+        display: none;
+    }
+
+    .jumbotron span ul li {
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+
+    .color {
+        /* margin-top: -70px; */
+    }
+
+    .colors {
+        list-style: none;
+        width: 30px;
+        height: 30px;
+        margin: 17px auto;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        cursor: pointer;
+    }
+
+    #color1 {
+        background: #5243AC;
+        /* z-index: 99; */
+    }
+
+    #color2 {
+        background: #b01c1c;
+        /* z-index: 99; */
+    }
+
+    #color3 {
+        background: #457682;
+        /* z-index: 99; */
+    }
+
 
     .jumbotron {
         margin-top: -75px;
@@ -794,7 +895,7 @@ body {
 
     .info-panel img {
         margin-left: 0px;
-        animation: bounceTop_01 3s ease infinite;
+        /* animation: bounceTop_01 3s ease infinite; */
     }
 
     .jumbotron img {
@@ -809,8 +910,10 @@ body {
 
     .info-panel a {
         text-decoration: none;
-        z-index: -1;
-        cursor: unset;
+        /* z-index: -999;
+        display: none; */
+        /* cursor: unset; */
+        margin-top: 10px;
     }
 
     .info-panel .download {
