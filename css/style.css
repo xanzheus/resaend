@@ -327,6 +327,7 @@ body {
     margin-bottom: 0px;
     display: flex;
     justify-content: center;
+    color: var(--color);
 }
 
 .info-panel p {
@@ -916,6 +917,7 @@ body {
         font-family: 'Poppins', sans-serif;
         /* margin-bottom: 0px; */
         justify-content: start;
+        color: var(--color);
     }
 
     .info-panel img {
